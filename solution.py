@@ -485,7 +485,7 @@ def output(model, f_tst, t_tst):
     plt.legend()
     plt.show()
 
-    plt.plot(outputs, truths, '+')
+    plt.plot(truths, outputs, '+')
     mini = min(np.minimum(outputs, truths))
     maxi = max(np.maximum(outputs, truths)) # calculates the range for the 1:1 line
     plt.plot([mini, maxi], [mini, maxi])
@@ -614,9 +614,9 @@ def main(file_name, mdl=3, n_epochs=500, sif=0, plot=True, test=True, save=False
 
 main("Data/fracture_k_set.csv", mdl=3, n_epochs=1000, sif=1, plot=False, test=False, save=True, mID = "res1", load=True, ld_mdl=[3,1,"res1"])
 
-#main("Data/fracture_k_set.csv", mdl=3, n_epochs=1000, sif=2, plot=False, test=False, save=True, mID = "res1", load=True, ld_mdl=[3,2,"res1"])
+main("Data/fracture_k_set.csv", mdl=3, n_epochs=1000, sif=2, plot=False, test=False, save=True, mID = "res1", load=True, ld_mdl=[3,2,"res1"])
 
-#main("Data/fracture_k_set.csv", mdl=3, n_epochs=1000, sif=3, plot=False, test=False, save=True, mID = "res1", load=True, ld_mdl=[3,3,"res1"])
+main("Data/fracture_k_set.csv", mdl=3, n_epochs=1000, sif=3, plot=False, test=False, save=True, mID = "res1", load=True, ld_mdl=[3,3,"res1"])
 
 
 #%%
