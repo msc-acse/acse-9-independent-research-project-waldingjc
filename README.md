@@ -35,3 +35,8 @@ If loading a model, further information must be provided as the ld_mdl argument,
 #### Output
 When set to save mode, the output is a .pt file containing the state dict of the trained model.
 If it is not saving, there is no permanent output, beyond the graphs you may tell it to generate.
+
+
+### Note regarding the repository
+
+This project was developed on a separate repo called waldingjc/Masters, with this repo only being used for submission, and therefore lacking all history. If access to the working repo is required to inspect commit history and such, please contact me at waldingjc@gmail.com and I will open the repo.
